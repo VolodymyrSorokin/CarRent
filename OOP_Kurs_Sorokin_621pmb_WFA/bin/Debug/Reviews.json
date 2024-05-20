@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "Username": "Admin",
+    "Content": "Thank you!",
+    "Date": "2024-05-17T00:00:00"
+  },
+  {
+    "Id": 2,
+    "Username": "Vlad",
+    "Content": "�����!",
+    "Date": "2024-05-18T00:00:00"
+  },
+  {
+    "Id": 3,
+    "Username": "Admin",
+    "Content": "Ok",
+    "Date": "2024-05-20T11:42:36.4503694+03:00"
+  },
+  {
+    "Id": 4,
+    "Username": "Boss",
+    "Content": "All right!",
+    "Date": "2024-05-20T11:48:18.2777112+03:00"
+  },
+  {
+    "Id": 5,
+    "Username": "Boss",
+    "Content": "Все сподобалось. Дуже дякую!",
+    "Date": "2024-05-20T11:49:07.2383532+03:00"
+  }
+]
