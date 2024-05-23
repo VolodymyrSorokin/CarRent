@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Text.RegularExpressions;
 
 namespace OOP_Kurs_Sorokin_621pmb_WFA
 {
@@ -26,6 +27,24 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             string username = textBox_Login.Text;
             string password = textBox_Parol.Text;
             string filePath = @"Users.json"; // Файл должен находиться в директории с исполняемым файлом приложения
+
+            // Регулярное выражение для проверки на латинские буквы и цифры
+            Regex validCharsRegex = new Regex(@"^[a-zA-Z0-9]+$");
+
+            // Проверка на минимальную длину логина и соответствие символов
+            if (username.Length < 5 || !validCharsRegex.IsMatch(username))
+            {
+                MessageBox.Show("Логін повинен складатися з мінімум 5 латинських букв або цифр.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox_Login.Focus();
+                return;
+            }
+            // Проверка на минимальную длину пароля и соответствие символов
+            if (password.Length < 5 || !validCharsRegex.IsMatch(password))
+            {
+                MessageBox.Show("Пароль повинен складатися з мінімум 5 латинських букв або цифр.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox_Parol.Focus();
+                return;
+            }
 
             List<User> users = UserDataAccess.LoadUsersFromJson(filePath);
             if (users.Any(u => u.Username.ToLower() == username.ToLower()))

@@ -44,6 +44,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             else
             {
                 MessageBox.Show("Только зарегистрированные пользователи могут оставлять отзывы.");
+                textBox_NewReview.Clear();
             }
 
         }

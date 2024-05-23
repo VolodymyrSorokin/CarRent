@@ -37,13 +37,20 @@
             this.Column_BodyType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button_ToMain = new System.Windows.Forms.Button();
+            this.button_Add = new System.Windows.Forms.Button();
+            this.button_Delite = new System.Windows.Forms.Button();
+            this.button_Edit = new System.Windows.Forms.Button();
+            this.button_Save = new System.Windows.Forms.Button();
+            this.textBox_Find = new System.Windows.Forms.TextBox();
+            this.button_Find = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CarsReport)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 22);
+            this.label1.Location = new System.Drawing.Point(12, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 16);
             this.label1.TabIndex = 0;
@@ -116,7 +123,7 @@
             // 
             // button_ToMain
             // 
-            this.button_ToMain.Location = new System.Drawing.Point(666, 22);
+            this.button_ToMain.Location = new System.Drawing.Point(713, 22);
             this.button_ToMain.Name = "button_ToMain";
             this.button_ToMain.Size = new System.Drawing.Size(75, 23);
             this.button_ToMain.TabIndex = 2;
@@ -124,11 +131,84 @@
             this.button_ToMain.UseVisualStyleBackColor = true;
             this.button_ToMain.Click += new System.EventHandler(this.button_ToMain_Click);
             // 
+            // button_Add
+            // 
+            this.button_Add.Location = new System.Drawing.Point(350, 22);
+            this.button_Add.Name = "button_Add";
+            this.button_Add.Size = new System.Drawing.Size(75, 23);
+            this.button_Add.TabIndex = 3;
+            this.button_Add.Text = "Додати";
+            this.button_Add.UseVisualStyleBackColor = true;
+            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
+            // 
+            // button_Delite
+            // 
+            this.button_Delite.Location = new System.Drawing.Point(441, 22);
+            this.button_Delite.Name = "button_Delite";
+            this.button_Delite.Size = new System.Drawing.Size(75, 23);
+            this.button_Delite.TabIndex = 4;
+            this.button_Delite.Text = "Видалити";
+            this.button_Delite.UseVisualStyleBackColor = true;
+            this.button_Delite.Click += new System.EventHandler(this.button_Delite_Click);
+            // 
+            // button_Edit
+            // 
+            this.button_Edit.Location = new System.Drawing.Point(531, 22);
+            this.button_Edit.Name = "button_Edit";
+            this.button_Edit.Size = new System.Drawing.Size(75, 23);
+            this.button_Edit.TabIndex = 5;
+            this.button_Edit.Text = "Редагувати";
+            this.button_Edit.UseVisualStyleBackColor = true;
+            this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
+            // 
+            // button_Save
+            // 
+            this.button_Save.Location = new System.Drawing.Point(623, 22);
+            this.button_Save.Name = "button_Save";
+            this.button_Save.Size = new System.Drawing.Size(75, 23);
+            this.button_Save.TabIndex = 6;
+            this.button_Save.Text = "Зберегти";
+            this.button_Save.UseVisualStyleBackColor = true;
+            this.button_Save.Click += new System.EventHandler(this.button_Save_Click);
+            // 
+            // textBox_Find
+            // 
+            this.textBox_Find.Location = new System.Drawing.Point(112, 24);
+            this.textBox_Find.Name = "textBox_Find";
+            this.textBox_Find.Size = new System.Drawing.Size(139, 22);
+            this.textBox_Find.TabIndex = 7;
+            // 
+            // button_Find
+            // 
+            this.button_Find.Location = new System.Drawing.Point(257, 22);
+            this.button_Find.Name = "button_Find";
+            this.button_Find.Size = new System.Drawing.Size(75, 23);
+            this.button_Find.TabIndex = 8;
+            this.button_Find.Text = "Шукати";
+            this.button_Find.UseVisualStyleBackColor = true;
+            this.button_Find.Click += new System.EventHandler(this.button_Find_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(112, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Введить виробника:";
+            // 
             // CarsReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button_Find);
+            this.Controls.Add(this.textBox_Find);
+            this.Controls.Add(this.button_Save);
+            this.Controls.Add(this.button_Edit);
+            this.Controls.Add(this.button_Delite);
+            this.Controls.Add(this.button_Add);
             this.Controls.Add(this.button_ToMain);
             this.Controls.Add(this.dataGridView_CarsReport);
             this.Controls.Add(this.label1);
@@ -151,5 +231,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_BodyType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Price;
         private System.Windows.Forms.Button button_ToMain;
+        private System.Windows.Forms.Button button_Add;
+        private System.Windows.Forms.Button button_Delite;
+        private System.Windows.Forms.Button button_Edit;
+        private System.Windows.Forms.Button button_Save;
+        private System.Windows.Forms.TextBox textBox_Find;
+        private System.Windows.Forms.Button button_Find;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -103,7 +103,7 @@
             // 
             // Column_id_User
             // 
-            this.Column_id_User.DataPropertyName = "id_User ";
+            this.Column_id_User.DataPropertyName = "Id_User";
             this.Column_id_User.HeaderText = "id Користувача";
             this.Column_id_User.MinimumWidth = 6;
             this.Column_id_User.Name = "Column_id_User";

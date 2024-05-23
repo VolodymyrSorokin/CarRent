@@ -12,6 +12,8 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
 {
     public partial class CarsParkForm : Form
     {
+        private int currentSearchIndex = -1; // Переменная для хранения индекса текущей строки поиска
+
         private List<Car> cars;  // Добавление поля для хранения списка машин
         public CarsParkForm()
         {
@@ -123,6 +125,82 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             this.Hide();
             contactsForm.FormClosed += (s, args) => this.Close();
             contactsForm.Show();
+        }
+
+        private void button_Issue_Click(object sender, EventArgs e)
+        {
+            IssueCarForm issueCarForm = new IssueCarForm();
+            this.Hide();
+            issueCarForm.FormClosed += (s, args) => this.Close();
+            issueCarForm.Show();
+
+        }
+
+        private void button_Delete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView_CarsPark.SelectedRows.Count > 0)
+            {
+                int selectedIndex = dataGridView_CarsPark.SelectedRows[0].Index;
+                int carId = (int)dataGridView_CarsPark.Rows[selectedIndex].Cells["Column_idCar"].Value;
+
+                // Удаление автомобиля
+                Car.RemoveCar(carId);
+                // Удаление всех связанных бронирований
+                Booking.RemoveAllBookingsForCar(carId);
+
+                // Обновление данных на форме
+                LoadDataIntoDataGridView();
+            }
+            else
+            {
+                MessageBox.Show("Будь ласка, виберіть рядок для видалення.");
+            }
+        }
+
+        private void button_Find_Click(object sender, EventArgs e)
+        {
+            string searchValue = textBox_Find.Text.ToLower(); // Принимаем текст для поиска
+            bool found = false;
+            textBox_Find.Clear();
+
+            // Начинаем поиск со следующей строки после текущего индекса
+            int startIndex = currentSearchIndex + 1;
+            for (int i = startIndex; i < dataGridView_CarsPark.Rows.Count; i++)
+            {
+                if (dataGridView_CarsPark.Rows[i].Cells["Column_Manufacturer"].Value.ToString().ToLower().Contains(searchValue))
+                {
+                    dataGridView_CarsPark.ClearSelection();
+                    dataGridView_CarsPark.Rows[i].Selected = true;
+                    dataGridView_CarsPark.FirstDisplayedScrollingRowIndex = i;
+                    currentSearchIndex = i;
+                    found = true;
+                    break;
+                }
+            }
+
+            // Если достигнут конец списка и совпадение не найдено, начать поиск сначала
+            if (!found && startIndex > 0)
+            {
+                for (int i = 0; i < startIndex; i++)
+                {
+                    if (dataGridView_CarsPark.Rows[i].Cells["Column_Manufacturer"].Value.ToString().ToLower().Contains(searchValue))
+                    {
+                        dataGridView_CarsPark.ClearSelection();
+                        dataGridView_CarsPark.Rows[i].Selected = true;
+                        dataGridView_CarsPark.FirstDisplayedScrollingRowIndex = i;
+                        currentSearchIndex = i;
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Если поиск не дал результатов
+            if (!found)
+            {
+                MessageBox.Show("Не знайдено жодного результату.");
+                currentSearchIndex = -1; // Сброс индекса поиска
+            }
         }
     }
 }

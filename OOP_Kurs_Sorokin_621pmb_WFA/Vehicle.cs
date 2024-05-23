@@ -16,8 +16,11 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
         public int Year { get; set; }
         public int Price { get; set; }
         public bool IsAvailable { get; set; }
+        public bool Issued { get; set; }
 
-        protected Vehicle(int id_Car, string manufacturer, string model, int year, int price, bool isAvailable = true)
+
+        protected Vehicle(int id_Car, string manufacturer, string model, int year, int price,
+                                                            bool isAvailable = true, bool issued = false)
         {
             //Id_Car = id_Car;
             this.id_Car = id_Car;
@@ -26,6 +29,8 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             Year = year;
             Price = price;
             IsAvailable = isAvailable;
+            Issued = issued;
+
         }
 
         public abstract void DisplayInfo();

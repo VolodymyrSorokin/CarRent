@@ -23,3 +23,4 @@ D:\Vlad\ВступУкр\МлБак\4_Семестр\ООП_Курсовой\Р�
 D:\Vlad\ВступУкр\МлБак\4_Семестр\ООП_Курсовой\Реализация\OOP_Kurs_Sorokin_621pmb_WFA\OOP_Kurs_Sorokin_621pmb_WFA\obj\Debug\OOP_Kurs_Sorokin_621pmb_WFA.ReviewsForm.resources
 D:\Vlad\ВступУкр\МлБак\4_Семестр\ООП_Курсовой\Реализация\OOP_Kurs_Sorokin_621pmb_WFA\OOP_Kurs_Sorokin_621pmb_WFA\obj\Debug\OOP_Kurs_Sorokin_621pmb_WFA.ConditionsForm.resources
 D:\Vlad\ВступУкр\МлБак\4_Семестр\ООП_Курсовой\Реализация\OOP_Kurs_Sorokin_621pmb_WFA\OOP_Kurs_Sorokin_621pmb_WFA\obj\Debug\OOP_Kurs_Sorokin_621pmb_WFA.ContactsForm.resources
+D:\Vlad\ВступУкр\МлБак\4_Семестр\ООП_Курсовой\Реализация\OOP_Kurs_Sorokin_621pmb_WFA\OOP_Kurs_Sorokin_621pmb_WFA\obj\Debug\OOP_Kurs_Sorokin_621pmb_WFA.IssueCarForm.resources

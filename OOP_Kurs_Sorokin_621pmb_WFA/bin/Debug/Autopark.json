@@ -6,7 +6,8 @@
     "Model": "Civic",
     "Year": 2022,
     "Price": 800,
-    "IsAvailable": true
+    "IsAvailable": true,
+    "Issued": false
   },
   {
     "BodyType": "Sedan",
@@ -15,7 +16,8 @@
     "Model": "i5",
     "Year": 2023,
     "Price": 900,
-    "IsAvailable": true
+    "IsAvailable": true,
+    "Issued": false
   },
   {
     "BodyType": "Sedan",
@@ -24,7 +26,8 @@
     "Model": "Model S",
     "Year": 2020,
     "Price": 1200,
-    "IsAvailable": true
+    "IsAvailable": true,
+    "Issued": false
   },
   {
     "BodyType": "Sedan",
@@ -33,15 +36,17 @@
     "Model": "Mustang",
     "Year": 2021,
     "Price": 850,
-    "IsAvailable": true
+    "IsAvailable": true,
+    "Issued": false
   },
   {
     "BodyType": "Sedan",
     "id_Car": 5,
     "Manufacturer": "Daewoo",
     "Model": "Lanos",
-    "Year": 1988,
+    "Year": 2020,
     "Price": 650,
-    "IsAvailable": true
+    "IsAvailable": true,
+    "Issued": false
   }
 ]

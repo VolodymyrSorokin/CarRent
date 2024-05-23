@@ -3,30 +3,56 @@
     "id_Car": 1,
     "id_User": 1,
     "booking_start_date": "2024-05-16T00:00:00",
-    "booking_end_date": "2024-05-20T00:00:00"
+    "booking_end_date": "2024-05-20T00:00:00",
+    "Issued": true
   },
   {
     "id_Car": 3,
     "id_User": 7,
     "booking_start_date": "2024-05-18T22:40:23.7878764+03:00",
-    "booking_end_date": "2024-05-19T22:40:23"
+    "booking_end_date": "2024-05-19T22:40:23",
+    "Issued": false
   },
   {
     "id_Car": 4,
     "id_User": 7,
     "booking_start_date": "2024-05-18T22:40:23.7878764+03:00",
-    "booking_end_date": "2024-05-19T22:40:23"
+    "booking_end_date": "2024-05-19T22:40:23",
+    "Issued": false
   },
   {
     "id_Car": 2,
     "id_User": 7,
     "booking_start_date": "2024-05-18T23:22:22.2921868+03:00",
-    "booking_end_date": "2024-05-19T23:22:22"
+    "booking_end_date": "2024-05-19T23:22:22",
+    "Issued": true
   },
   {
     "id_Car": 2,
     "id_User": 13,
     "booking_start_date": "2024-05-29T17:45:08",
-    "booking_end_date": "2024-05-31T17:45:08"
+    "booking_end_date": "2024-05-31T17:45:08",
+    "Issued": true
+  },
+  {
+    "id_Car": 3,
+    "id_User": 1,
+    "booking_start_date": "2024-05-29T00:03:00",
+    "booking_end_date": "2024-05-31T00:03:00",
+    "Issued": false
+  },
+  {
+    "id_Car": 2,
+    "id_User": 1,
+    "booking_start_date": "2024-05-22T03:32:40.7550075+03:00",
+    "booking_end_date": "2024-05-23T03:32:40",
+    "Issued": false
+  },
+  {
+    "id_Car": 3,
+    "id_User": 12,
+    "booking_start_date": "2024-05-22T20:49:38.4486736+03:00",
+    "booking_end_date": "2024-05-23T20:49:38",
+    "Issued": false
   }
 ]

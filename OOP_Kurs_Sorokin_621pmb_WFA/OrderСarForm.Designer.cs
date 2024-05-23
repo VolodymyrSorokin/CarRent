@@ -33,13 +33,13 @@
             this.button_AvailableCars = new System.Windows.Forms.Button();
             this.button_ToMain = new System.Windows.Forms.Button();
             this.dataGridView_Order = new System.Windows.Forms.DataGridView();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column_idCar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Manufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BodyType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column_Booking = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Order)).BeginInit();
             this.SuspendLayout();
@@ -97,9 +97,20 @@
             this.dataGridView_Order.Name = "dataGridView_Order";
             this.dataGridView_Order.RowHeadersWidth = 51;
             this.dataGridView_Order.RowTemplate.Height = 24;
-            this.dataGridView_Order.Size = new System.Drawing.Size(797, 341);
+            this.dataGridView_Order.Size = new System.Drawing.Size(807, 341);
             this.dataGridView_Order.TabIndex = 4;
             this.dataGridView_Order.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Order_CellContentClick);
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.HeaderText = "Замовити";
+            this.dataGridViewButtonColumn1.MinimumWidth = 6;
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn1.Text = "Замовити";
+            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
+            this.dataGridViewButtonColumn1.Width = 125;
             // 
             // Column_idCar
             // 
@@ -149,16 +160,6 @@
             this.Price.Name = "Price";
             this.Price.Width = 125;
             // 
-            // dataGridViewButtonColumn1
-            // 
-            this.dataGridViewButtonColumn1.HeaderText = "Замовити";
-            this.dataGridViewButtonColumn1.MinimumWidth = 6;
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewButtonColumn1.Text = "Замовити";
-            this.dataGridViewButtonColumn1.Width = 125;
-            // 
             // Column_Booking
             // 
             this.Column_Booking.HeaderText = "Замовити";
@@ -167,13 +168,14 @@
             this.Column_Booking.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column_Booking.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column_Booking.Text = "Замовити";
+            this.Column_Booking.UseColumnTextForButtonValue = true;
             this.Column_Booking.Width = 125;
             // 
             // OrderСarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(809, 450);
             this.Controls.Add(this.dataGridView_Order);
             this.Controls.Add(this.button_ToMain);
             this.Controls.Add(this.button_AvailableCars);
@@ -193,6 +195,7 @@
         private System.Windows.Forms.Button button_AvailableCars;
         private System.Windows.Forms.Button button_ToMain;
         private System.Windows.Forms.DataGridView dataGridView_Order;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_idCar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Manufacturer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
@@ -200,6 +203,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BodyType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewButtonColumn Column_Booking;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
     }
 }

@@ -82,6 +82,14 @@
       <DependentUpon>ContactsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataGridViewDisableButtonCell.cs" />
+    <Compile Include="IDataAccess.cs" />
+    <Compile Include="IRentable.cs" />
+    <Compile Include="IssueCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueCarForm.Designer.cs">
+      <DependentUpon>IssueCarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrdersReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +165,9 @@
     <EmbeddedResource Include="ContactsForm.resx">
       <DependentUpon>ContactsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IssueCarForm.resx">
+      <DependentUpon>IssueCarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrdersReportForm.resx">
       <DependentUpon>OrdersReportForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +198,7 @@
     <EmbeddedResource Include="UsersForm.resx">
       <DependentUpon>UsersForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
