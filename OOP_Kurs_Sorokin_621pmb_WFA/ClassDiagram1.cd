@@ -1,83 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Vehicle">
-    <Position X="5.75" Y="11.75" Width="1.5" />
+  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Vehicle" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAkAAAAABQAAEAAAAAACAAAAAAAAAAAAAAgAAIAAAAA=</HashCode>
       <FileName>Vehicle.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.UsersForm" Collapsed="true">
-    <Position X="9" Y="10.75" Width="1.5" />
+    <Position X="9.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAoAQAACAAARgAAACIAAACAAAAEAAIABAAAAEAAIA=</HashCode>
       <FileName>UsersForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.UserSession" Collapsed="true">
-    <Position X="2.25" Y="13.75" Width="1.5" />
+    <Position X="2.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIBAAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>UserSession.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.UserDataAccess" Collapsed="true">
-    <Position X="2.25" Y="12.25" Width="1.5" />
+    <Position X="2.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UserDataAccess.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.User" Collapsed="true">
-    <Position X="2.25" Y="11.5" Width="1.5" />
+    <Position X="2.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAQAAAAAAAAAAAAACIAIAIAAAAAg=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.SecurityHelper" Collapsed="true">
-    <Position X="2.25" Y="13" Width="1.5" />
+    <Position X="2.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SecurityHelper.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.ReviewsForm" Collapsed="true">
-    <Position X="7.25" Y="10.5" Width="1.5" />
+    <Position X="7.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AARAgAACECAAgAAAQACAAAACAEAAAAAAARABAAAgAAA=</HashCode>
       <FileName>ReviewsForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.ReviewsDataAccess" Collapsed="true">
-    <Position X="7.25" Y="11.25" Width="1.5" />
+    <Position X="7.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>ReviewsDataAccess.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Review" Collapsed="true">
-    <Position X="7.25" Y="9.75" Width="1.5" />
+    <Position X="7.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAgAAAAAAAQAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Review.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.ReportForm" Collapsed="true">
-    <Position X="9" Y="9.75" Width="1.5" />
+    <Position X="9.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgEAAACAAABAAAACAAAACABAAAKAAAACAAAAAAAA=</HashCode>
       <FileName>ReportForm.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.RegistrationForm">
-    <Position X="3.75" Y="4.5" Width="1.5" />
+  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.RegistrationForm" Collapsed="true">
+    <Position X="4" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAEFAAIACAAAECgAAAACgABAAQAAAASAA=</HashCode>
       <FileName>RegistrationForm.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Program">
+  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Program" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
@@ -85,100 +85,107 @@
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.OrderСarForm" Collapsed="true">
-    <Position X="2" Y="9.75" Width="1.5" />
+    <Position X="2.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAgAhAAIBSIAAAAAAACAIEAKIAAgAAgAABgQAAgAAAA=</HashCode>
       <FileName>OrderСarForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.OrdersReportForm" Collapsed="true">
-    <Position X="9" Y="11.5" Width="1.5" />
+    <Position X="9.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAoAQIACgAABBAAACAAAACIAACAAAIABAAAAAAACA=</HashCode>
       <FileName>OrdersReportForm.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.InitialForm">
-    <Position X="2" Y="0.5" Width="1.5" />
+  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.InitialForm" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CQAAAAAEACAAABABAACCAAgCAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>InitialForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.DataGridViewDisableButtonCell" Collapsed="true">
-    <Position X="2" Y="10.5" Width="1.5" />
+    <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
       <FileName>DataGridViewDisableButtonCell.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.ContactsForm" Collapsed="true">
-    <Position X="5.5" Y="9.75" Width="1.5" />
+    <Position X="5.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAggAAAACAAABAAAACBAAECAAAAAAAAgFAAAAAgAAA=</HashCode>
       <FileName>ContactsForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.ConditionsForm" Collapsed="true">
-    <Position X="3.75" Y="9.75" Width="1.5" />
+    <Position X="4" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAggAAAACAAABAAAACAAAACAAAAEAAAglACAAAAAAA=</HashCode>
       <FileName>ConditionsForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.CarsReportForm" Collapsed="true">
-    <Position X="9" Y="12.25" Width="1.5" />
+    <Position X="9.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAogAQAAKwAABBAAAKAAQGiAAAAIMgAgFAAAAQCQBA=</HashCode>
       <FileName>CarsReportForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.CarsParkForm" Collapsed="true">
-    <Position X="2" Y="9" Width="1.5" />
+    <Position X="2.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAoEB1ABGiIEgIBACCAAAgmAAAAJYAAAAIAAAQgAhA=</HashCode>
       <FileName>CarsParkForm.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Car">
-    <Position X="0.5" Y="12.25" Width="1.5" />
+  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Car" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAIAAEAAAAAAAAAAAICAAAAAAAAAAEAEABAA=</HashCode>
       <FileName>Car.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Booking">
-    <Position X="4" Y="11.5" Width="1.5" />
+  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.Booking" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAEAAAAAAAACAAAAAAACAAABBCAAAAAAAQAAECAAABA=</HashCode>
       <FileName>Booking.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.AuthorizationForm">
-    <Position X="2" Y="4.5" Width="1.5" />
+  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.AuthorizationForm" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAABAAIACAAAACgAAAAAgABAAAAAAAQAA=</HashCode>
       <FileName>AuthorizationForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.AddCarForm" Collapsed="true">
-    <Position X="10.75" Y="9.75" Width="1.5" />
+    <Position X="11" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAACAAABAAAACAAAACAAAAAIAAAAAUKAQAAAA=</HashCode>
       <FileName>AddCarForm.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="OOP_Kurs_Sorokin_621pmb_WFA.IDataAccess&lt;T&gt;">
-    <Position X="7.25" Y="0.5" Width="1.5" />
+  <Class Name="OOP_Kurs_Sorokin_621pmb_WFA.IssueCarForm" Collapsed="true">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAA4AQIACAABABAQACAAAACAAACABggBBAAAAAAAAA=</HashCode>
+      <FileName>IssueCarForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="OOP_Kurs_Sorokin_621pmb_WFA.IDataAccess&lt;T&gt;" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IDataAccess.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="OOP_Kurs_Sorokin_621pmb_WFA.IRentable">
-    <Position X="9.25" Y="0.5" Width="1.5" />
+  <Interface Name="OOP_Kurs_Sorokin_621pmb_WFA.IRentable" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAEAAAAAA=</HashCode>
       <FileName>IRentable.cs</FileName>

@@ -1,0 +1,52 @@
+[
+  {
+    "BodyType": "Sedan",
+    "id_Car": 1,
+    "Manufacturer": "Honda",
+    "Model": "Civic",
+    "Year": 2022,
+    "Price": 800,
+    "IsAvailable": true,
+    "Issued": false
+  },
+  {
+    "BodyType": "Sedan",
+    "id_Car": 2,
+    "Manufacturer": "BMV",
+    "Model": "i5",
+    "Year": 2023,
+    "Price": 900,
+    "IsAvailable": true,
+    "Issued": false
+  },
+  {
+    "BodyType": "Sedan",
+    "id_Car": 3,
+    "Manufacturer": "Tesla",
+    "Model": "Model S",
+    "Year": 2020,
+    "Price": 1200,
+    "IsAvailable": true,
+    "Issued": false
+  },
+  {
+    "BodyType": "Sedan",
+    "id_Car": 4,
+    "Manufacturer": "Ford",
+    "Model": "Mustang",
+    "Year": 2021,
+    "Price": 850,
+    "IsAvailable": true,
+    "Issued": false
+  },
+  {
+    "BodyType": "Sedan",
+    "id_Car": 5,
+    "Manufacturer": "Daewoo",
+    "Model": "Lanos",
+    "Year": 2020,
+    "Price": 650,
+    "IsAvailable": true,
+    "Issued": false
+  }
+]

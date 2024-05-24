@@ -11,6 +11,9 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
 {
     public class Car : Vehicle, IRentable
     {
+        // Создаём статическую переменную для управления путем к файлу
+        public static string filePath = @"Autopark.json";
+
         public string BodyType { get; set; }
         //public int id_Car { get; set; }
 
@@ -38,7 +41,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не удалось загрузить данные автомобилей: " + ex.Message);
+                //MessageBox.Show("Не удалось загрузить данные автомобилей: " + ex.Message);
                 return new List<Car>();
             }
         }
@@ -57,7 +60,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не вдалося записати дані автомобіля: " + ex.Message);
+               // MessageBox.Show("Не вдалося записати дані автомобіля: " + ex.Message);
             }
         }
 
@@ -85,7 +88,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
         // Метод для сохранения изменений в JSON
         private void SaveChanges()
         {
-            var filePath = "Autopark.json"; // Указываете путь к вашему JSON файлу с автомобилями
+            //var filePath = "Autopark.json"; // Указываете путь к вашему JSON файлу с автомобилями
             var cars = LoadCars(filePath);
             var car = cars.FirstOrDefault(c => c.id_Car == this.id_Car);
             if (car != null)
@@ -99,7 +102,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
 
         public static void RemoveCar(int carId)
         {
-            string filePath = @"Autopark.json";
+            //string filePath = @"Autopark.json";
             List<Car> cars = LoadCars(filePath);
             cars = cars.Where(car => car.id_Car != carId).ToList();
             File.WriteAllText(filePath, JsonConvert.SerializeObject(cars, Formatting.Indented));

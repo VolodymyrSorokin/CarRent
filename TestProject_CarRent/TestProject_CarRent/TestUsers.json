@@ -1,0 +1,106 @@
+[
+  {
+    "Id_User": 1,
+    "FirstName": "Володимир",
+    "LastName": "Сорокін",
+    "Phone": "+380982611077",
+    "Username": "Admin",
+    "Password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5"
+  },
+  {
+    "Id_User": 2,
+    "FirstName": "Марія",
+    "LastName": "Іванова",
+    "Phone": "+380501234567",
+    "Username": "Maria",
+    "Password": "pass123"
+  },
+  {
+    "Id_User": 3,
+    "FirstName": "Олексій",
+    "LastName": "Петров",
+    "Phone": "+380987654321",
+    "Username": "Alexey",
+    "Password": "alexey123"
+  },
+  {
+    "Id_User": 4,
+    "FirstName": "Ольга",
+    "LastName": "Сорокіна",
+    "Phone": "+382634884",
+    "Username": "Olga",
+    "Password": "Olga"
+  },
+  {
+    "Id_User": 5,
+    "FirstName": "Олег",
+    "LastName": "Захаров",
+    "Phone": "+380678453201",
+    "Username": "Zahar",
+    "Password": "00000"
+  },
+  {
+    "Id_User": 6,
+    "FirstName": "Микола",
+    "LastName": "Петренко",
+    "Phone": "+380667776655",
+    "Username": "Petrenko",
+    "Password": "Petrenko"
+  },
+  {
+    "Id_User": 7,
+    "FirstName": "Олег",
+    "LastName": "Кабан",
+    "Phone": "+380971112233",
+    "Username": "Kaban",
+    "Password": "55555"
+  },
+  {
+    "Id_User": 8,
+    "FirstName": "Андрій",
+    "LastName": "Козін",
+    "Phone": "+380991112233",
+    "Username": "44444",
+    "Password": "816e2845d395e7703abac2dcbf9d54e39236fd39133362bf7ad3fce70dd7d78e"
+  },
+  {
+    "Id_User": 9,
+    "FirstName": "Ігор",
+    "LastName": "Бондаренко",
+    "Phone": "+380984443322",
+    "Username": "Igor",
+    "Password": "d17f25ecfbcc7857f7bebea469308be0b2580943e96d13a3ad98a13675c4bfc2"
+  },
+  {
+    "Id_User": 10,
+    "FirstName": "88888",
+    "LastName": "88888",
+    "Phone": "88888",
+    "Username": "88888",
+    "Password": "3d0a234093378eaffc3fe01cd6edbc3cd4302a37457b0c3bb3dd464a52c5a070"
+  },
+  {
+    "Id_User": 11,
+    "FirstName": "Олександр",
+    "LastName": "Ващенко",
+    "Phone": "+380667778855",
+    "Username": "Vashenko",
+    "Password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5"
+  },
+  {
+    "Id_User": 12,
+    "FirstName": "Богдан",
+    "LastName": "Іванов",
+    "Phone": "+38098777666555",
+    "Username": "Boss",
+    "Password": "e7042ac7d09c7bc41c8cfa5749e41858f6980643bc0db1a83cc793d3e24d3f77"
+  },
+  {
+    "Id_User": 13,
+    "FirstName": "Анна",
+    "LastName": "Куц",
+    "Phone": "+3809877766655",
+    "Username": "Anna",
+    "Password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5"
+  }
+]

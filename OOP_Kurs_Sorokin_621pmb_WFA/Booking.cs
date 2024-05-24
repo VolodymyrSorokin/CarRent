@@ -11,6 +11,9 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
 {
     public class Booking : IRentable
     {
+        // Создаём статическую переменную для управления путем к файлу
+        public static string filePath = @"BookingAuto.json";
+
         public int id_Car { get; set; }
         public int id_User { get; set; }
         public DateTime booking_start_date { get; set; }
@@ -38,7 +41,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
         // Статический метод для сохранения изменений в файл JSON
         public static void SaveChanges(Booking booking)
         {
-            string filePath = @"BookingAuto.json";
+            //string filePath = @"BookingAuto.json";
             List<Booking> bookings = LoadBookings(filePath);
             var existingBooking = bookings.FirstOrDefault(b => b.id_Car == booking.id_Car && b.id_User == booking.id_User);
             if (existingBooking != null)
@@ -61,7 +64,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не удалось загрузить данные о бронированиях: " + ex.Message);
+               // MessageBox.Show("Не удалось загрузить данные о бронированиях: " + ex.Message);
                 return new List<Booking>();
             }
         }
@@ -78,13 +81,13 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка при сохранении бронирований: " + ex.Message);
+                //MessageBox.Show("Ошибка при сохранении бронирований: " + ex.Message);
             }           
         }
 
         public static void RemoveAllBookingsForCar(int carId)
         {
-            string filePath = @"BookingAuto.json";
+            //string filePath = @"BookingAuto.json";
             List<Booking> bookings = LoadBookings(filePath);
             bookings = bookings.Where(booking => booking.id_Car != carId).ToList();
             File.WriteAllText(filePath, JsonConvert.SerializeObject(bookings, Formatting.Indented));
