@@ -64,7 +64,8 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-               // MessageBox.Show("Не удалось загрузить данные о бронированиях: " + ex.Message);
+                //При UNIT-тестуванні наступна строка має бути закоментована
+                MessageBox.Show("Не удалось загрузить данные о бронированиях: " + ex.Message);
                 return new List<Booking>();
             }
         }
@@ -81,7 +82,8 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-                //MessageBox.Show("Ошибка при сохранении бронирований: " + ex.Message);
+                //При UNIT-тестуванні наступна строка має бути закоментована
+                MessageBox.Show("Ошибка при сохранении бронирований: " + ex.Message);
             }           
         }
 

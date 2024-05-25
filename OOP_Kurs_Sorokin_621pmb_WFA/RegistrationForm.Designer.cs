@@ -40,6 +40,7 @@
             this.textBox_Login = new System.Windows.Forms.TextBox();
             this.textBox_Parol = new System.Windows.Forms.TextBox();
             this.button_Enter = new System.Windows.Forms.Button();
+            this.button_Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -141,11 +142,22 @@
             this.button_Enter.UseVisualStyleBackColor = true;
             this.button_Enter.Click += new System.EventHandler(this.button_Enter_Click);
             // 
+            // button_Back
+            // 
+            this.button_Back.Location = new System.Drawing.Point(652, 80);
+            this.button_Back.Name = "button_Back";
+            this.button_Back.Size = new System.Drawing.Size(75, 23);
+            this.button_Back.TabIndex = 12;
+            this.button_Back.Text = "Назад";
+            this.button_Back.UseVisualStyleBackColor = true;
+            this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_Back);
             this.Controls.Add(this.button_Enter);
             this.Controls.Add(this.textBox_Parol);
             this.Controls.Add(this.textBox_Login);
@@ -179,5 +191,6 @@
         private System.Windows.Forms.TextBox textBox_Login;
         private System.Windows.Forms.TextBox textBox_Parol;
         private System.Windows.Forms.Button button_Enter;
+        private System.Windows.Forms.Button button_Back;
     }
 }

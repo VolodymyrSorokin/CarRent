@@ -45,7 +45,6 @@
             this.button_Logout = new System.Windows.Forms.Button();
             this.button_Out = new System.Windows.Forms.Button();
             this.button_Issue = new System.Windows.Forms.Button();
-            this.button_Delete = new System.Windows.Forms.Button();
             this.button_Find = new System.Windows.Forms.Button();
             this.textBox_Find = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CarsPark)).BeginInit();
@@ -215,17 +214,8 @@
             this.button_Issue.TabIndex = 14;
             this.button_Issue.Text = "Видача";
             this.button_Issue.UseVisualStyleBackColor = true;
+            this.button_Issue.Visible = false;
             this.button_Issue.Click += new System.EventHandler(this.button_Issue_Click);
-            // 
-            // button_Delete
-            // 
-            this.button_Delete.Location = new System.Drawing.Point(417, 60);
-            this.button_Delete.Name = "button_Delete";
-            this.button_Delete.Size = new System.Drawing.Size(75, 23);
-            this.button_Delete.TabIndex = 15;
-            this.button_Delete.Text = "Видалити";
-            this.button_Delete.UseVisualStyleBackColor = true;
-            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
             // button_Find
             // 
@@ -251,7 +241,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textBox_Find);
             this.Controls.Add(this.button_Find);
-            this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.button_Issue);
             this.Controls.Add(this.button_Out);
             this.Controls.Add(this.button_Logout);
@@ -290,7 +279,6 @@
         private System.Windows.Forms.Button button_Logout;
         private System.Windows.Forms.Button button_Out;
         private System.Windows.Forms.Button button_Issue;
-        private System.Windows.Forms.Button button_Delete;
         private System.Windows.Forms.Button button_Find;
         private System.Windows.Forms.TextBox textBox_Find;
     }

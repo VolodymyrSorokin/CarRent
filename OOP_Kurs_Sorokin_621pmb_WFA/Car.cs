@@ -41,7 +41,8 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-                //MessageBox.Show("Не удалось загрузить данные автомобилей: " + ex.Message);
+                //При UNIT-тестуванні наступна строка має бути закоментована
+                MessageBox.Show("Не удалось загрузить данные автомобилей: " + ex.Message);
                 return new List<Car>();
             }
         }
@@ -60,7 +61,8 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-               // MessageBox.Show("Не вдалося записати дані автомобіля: " + ex.Message);
+                //При UNIT-тестуванні наступна строка має бути закоментована
+                MessageBox.Show("Не вдалося записати дані автомобіля: " + ex.Message);
             }
         }
 

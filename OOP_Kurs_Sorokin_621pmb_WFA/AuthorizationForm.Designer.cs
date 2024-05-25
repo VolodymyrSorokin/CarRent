@@ -34,6 +34,7 @@
             this.button_Enter = new System.Windows.Forms.Button();
             this.textBox_Login = new System.Windows.Forms.TextBox();
             this.textBox_Parol = new System.Windows.Forms.TextBox();
+            this.button_Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,11 +88,22 @@
             this.textBox_Parol.Size = new System.Drawing.Size(100, 22);
             this.textBox_Parol.TabIndex = 5;
             // 
+            // button_Back
+            // 
+            this.button_Back.Location = new System.Drawing.Point(631, 63);
+            this.button_Back.Name = "button_Back";
+            this.button_Back.Size = new System.Drawing.Size(75, 23);
+            this.button_Back.TabIndex = 6;
+            this.button_Back.Text = "Назад";
+            this.button_Back.UseVisualStyleBackColor = true;
+            this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
+            // 
             // AuthorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_Back);
             this.Controls.Add(this.textBox_Parol);
             this.Controls.Add(this.textBox_Login);
             this.Controls.Add(this.button_Enter);
@@ -113,5 +125,6 @@
         private System.Windows.Forms.Button button_Enter;
         private System.Windows.Forms.TextBox textBox_Login;
         private System.Windows.Forms.TextBox textBox_Parol;
+        private System.Windows.Forms.Button button_Back;
     }
 }

@@ -29,7 +29,8 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             }
             catch (Exception ex)
             {
-                //MessageBox.Show("Не удалось загрузить данные пользователей: " + ex.Message);
+                //При UNIT-тестуванні наступна строка має бути закоментована
+                MessageBox.Show("Не удалось загрузить данные пользователей: " + ex.Message);
                 return new List<User>();
             }
         }

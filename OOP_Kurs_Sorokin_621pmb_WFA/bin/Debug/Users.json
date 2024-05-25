@@ -102,5 +102,13 @@
     "Phone": "+3809877766655",
     "Username": "Anna",
     "Password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5"
+  },
+  {
+    "Id_User": 14,
+    "FirstName": "Василь",
+    "LastName": "Кінь",
+    "Phone": "+380664441122",
+    "Username": "Ritas",
+    "Password": "d17f25ecfbcc7857f7bebea469308be0b2580943e96d13a3ad98a13675c4bfc2"
   }
 ]

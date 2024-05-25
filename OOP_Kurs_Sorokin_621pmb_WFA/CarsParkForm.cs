@@ -35,6 +35,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             {
                 button_Add.Visible = true;
                 button_Report.Visible = true;
+                button_Issue.Visible = true;
             }
             else
             {
@@ -134,27 +135,6 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             issueCarForm.FormClosed += (s, args) => this.Close();
             issueCarForm.Show();
 
-        }
-
-        private void button_Delete_Click(object sender, EventArgs e)
-        {
-            if (dataGridView_CarsPark.SelectedRows.Count > 0)
-            {
-                int selectedIndex = dataGridView_CarsPark.SelectedRows[0].Index;
-                int carId = (int)dataGridView_CarsPark.Rows[selectedIndex].Cells["Column_idCar"].Value;
-
-                // Удаление автомобиля
-                Car.RemoveCar(carId);
-                // Удаление всех связанных бронирований
-                Booking.RemoveAllBookingsForCar(carId);
-
-                // Обновление данных на форме
-                LoadDataIntoDataGridView();
-            }
-            else
-            {
-                MessageBox.Show("Будь ласка, виберіть рядок для видалення.");
-            }
         }
 
         private void button_Find_Click(object sender, EventArgs e)

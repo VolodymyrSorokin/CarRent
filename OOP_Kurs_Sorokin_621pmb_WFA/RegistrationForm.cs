@@ -75,5 +75,14 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             authForm.FormClosed += (s, args) => this.Close();
             authForm.Show();
         }
+
+        private void button_Back_Click(object sender, EventArgs e)
+        {
+            InitialForm initialForm = new InitialForm();
+            this.Hide();
+            initialForm.FormClosed += (s, args) => this.Close();
+            initialForm.Show();
+
+        }
     }
 }
