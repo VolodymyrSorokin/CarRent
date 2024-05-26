@@ -30,14 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView_OrdersReport = new System.Windows.Forms.DataGridView();
-            this.button_ToMain = new System.Windows.Forms.Button();
-            this.dateTimePicker_Date = new System.Windows.Forms.DateTimePicker();
-            this.button_Search = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.Column_id_User = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_id_Car = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_booking_start_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_booking_end_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button_ToMain = new System.Windows.Forms.Button();
+            this.dateTimePicker_Date = new System.Windows.Forms.DateTimePicker();
+            this.button_Search = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button_Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_OrdersReport)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +65,38 @@
             this.dataGridView_OrdersReport.RowTemplate.Height = 24;
             this.dataGridView_OrdersReport.Size = new System.Drawing.Size(776, 366);
             this.dataGridView_OrdersReport.TabIndex = 1;
+            // 
+            // Column_id_User
+            // 
+            this.Column_id_User.DataPropertyName = "id_User";
+            this.Column_id_User.HeaderText = "id Користувача";
+            this.Column_id_User.MinimumWidth = 6;
+            this.Column_id_User.Name = "Column_id_User";
+            this.Column_id_User.Width = 125;
+            // 
+            // Column_id_Car
+            // 
+            this.Column_id_Car.DataPropertyName = "id_Car";
+            this.Column_id_Car.HeaderText = "id Авто";
+            this.Column_id_Car.MinimumWidth = 6;
+            this.Column_id_Car.Name = "Column_id_Car";
+            this.Column_id_Car.Width = 125;
+            // 
+            // Column_booking_start_date
+            // 
+            this.Column_booking_start_date.DataPropertyName = "booking_start_date";
+            this.Column_booking_start_date.HeaderText = "Початок бронювання";
+            this.Column_booking_start_date.MinimumWidth = 6;
+            this.Column_booking_start_date.Name = "Column_booking_start_date";
+            this.Column_booking_start_date.Width = 125;
+            // 
+            // Column_booking_end_date
+            // 
+            this.Column_booking_end_date.DataPropertyName = "booking_end_date";
+            this.Column_booking_end_date.HeaderText = "Кінець бронювання";
+            this.Column_booking_end_date.MinimumWidth = 6;
+            this.Column_booking_end_date.Name = "Column_booking_end_date";
+            this.Column_booking_end_date.Width = 125;
             // 
             // button_ToMain
             // 
@@ -102,43 +135,22 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Дата бронювання";
             // 
-            // Column_id_User
+            // button_Back
             // 
-            this.Column_id_User.DataPropertyName = "id_User";
-            this.Column_id_User.HeaderText = "id Користувача";
-            this.Column_id_User.MinimumWidth = 6;
-            this.Column_id_User.Name = "Column_id_User";
-            this.Column_id_User.Width = 125;
-            // 
-            // Column_id_Car
-            // 
-            this.Column_id_Car.DataPropertyName = "id_Car";
-            this.Column_id_Car.HeaderText = "id Авто";
-            this.Column_id_Car.MinimumWidth = 6;
-            this.Column_id_Car.Name = "Column_id_Car";
-            this.Column_id_Car.Width = 125;
-            // 
-            // Column_booking_start_date
-            // 
-            this.Column_booking_start_date.DataPropertyName = "booking_start_date";
-            this.Column_booking_start_date.HeaderText = "Початок бронювання";
-            this.Column_booking_start_date.MinimumWidth = 6;
-            this.Column_booking_start_date.Name = "Column_booking_start_date";
-            this.Column_booking_start_date.Width = 125;
-            // 
-            // Column_booking_end_date
-            // 
-            this.Column_booking_end_date.DataPropertyName = "booking_end_date";
-            this.Column_booking_end_date.HeaderText = "Кінець бронювання";
-            this.Column_booking_end_date.MinimumWidth = 6;
-            this.Column_booking_end_date.Name = "Column_booking_end_date";
-            this.Column_booking_end_date.Width = 125;
+            this.button_Back.Location = new System.Drawing.Point(595, 26);
+            this.button_Back.Name = "button_Back";
+            this.button_Back.Size = new System.Drawing.Size(75, 23);
+            this.button_Back.TabIndex = 6;
+            this.button_Back.Text = "Назад";
+            this.button_Back.UseVisualStyleBackColor = true;
+            this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
             // 
             // OrdersReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_Back);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button_Search);
             this.Controls.Add(this.dateTimePicker_Date);
@@ -165,5 +177,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_id_Car;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_booking_start_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_booking_end_date;
+        private System.Windows.Forms.Button button_Back;
     }
 }

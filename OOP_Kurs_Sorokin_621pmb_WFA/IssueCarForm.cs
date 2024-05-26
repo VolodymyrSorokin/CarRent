@@ -54,18 +54,39 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
         {
             if (e.RowIndex >= 0)
             {
-                // Извлекаем объект Car из строки, по которой кликнули
+                // Извлекаем объект Booking из строки, по которой кликнули
                 var booking = (Booking)dataGridView_Issue.Rows[e.RowIndex].DataBoundItem;
-                if (e.ColumnIndex == dataGridView_Issue.Columns["Column_Issue"].Index && !booking.Issued)
+
+                if (e.ColumnIndex == dataGridView_Issue.Columns["Column_Issue"].Index)
                 {
-                    booking.Rent();
-                    MessageBox.Show("Автомобиль выдан", "Выдача", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (booking.booking_end_date < DateTime.Now)
+                    {
+                        MessageBox.Show("Строк бронювання вже закінчено. Створіть інше бронювання.", "Видача неможлива", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (!booking.Issued)
+                    {
+                        booking.Rent();
+                        MessageBox.Show("Автомобиль выдан", "Выдача", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
-                else if (e.ColumnIndex == dataGridView_Issue.Columns["Column_Return"].Index && booking.Issued)
+                else if (e.ColumnIndex == dataGridView_Issue.Columns["Column_Return"].Index)
                 {
-                    booking.Return();
-                    MessageBox.Show("Автомобиль возвращен", "Возврат", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (booking.Issued)
+                    {
+                        booking.Return();
+                        if (booking.booking_end_date < DateTime.Now)
+                        {
+                            MessageBox.Show("Авто повернуто з запізненням.", "Возврат с опозданием", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Автомобиль возвращен", "Возврат", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
                 }
+
+                // Сохраняем изменения и обновляем данные в DataGridView
+                Booking.SaveChanges(booking);
                 LoadDataIntoDataGridView(); // Перезагружаем данные, чтобы отразить изменения
             }
         }

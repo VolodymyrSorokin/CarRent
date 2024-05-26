@@ -32,6 +32,7 @@
             this.button_Cars = new System.Windows.Forms.Button();
             this.button_Users = new System.Windows.Forms.Button();
             this.button_Orders = new System.Windows.Forms.Button();
+            this.button_ToMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,11 +74,22 @@
             this.button_Orders.UseVisualStyleBackColor = true;
             this.button_Orders.Click += new System.EventHandler(this.button_Orders_Click);
             // 
+            // button_ToMain
+            // 
+            this.button_ToMain.Location = new System.Drawing.Point(689, 69);
+            this.button_ToMain.Name = "button_ToMain";
+            this.button_ToMain.Size = new System.Drawing.Size(75, 23);
+            this.button_ToMain.TabIndex = 4;
+            this.button_ToMain.Text = "Головна";
+            this.button_ToMain.UseVisualStyleBackColor = true;
+            this.button_ToMain.Click += new System.EventHandler(this.button_ToMain_Click);
+            // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_ToMain);
             this.Controls.Add(this.button_Orders);
             this.Controls.Add(this.button_Users);
             this.Controls.Add(this.button_Cars);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button button_Cars;
         private System.Windows.Forms.Button button_Users;
         private System.Windows.Forms.Button button_Orders;
+        private System.Windows.Forms.Button button_ToMain;
     }
 }

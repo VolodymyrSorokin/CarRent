@@ -25,14 +25,14 @@
     "id_User": 7,
     "booking_start_date": "2024-05-18T23:22:22.2921868+03:00",
     "booking_end_date": "2024-05-19T23:22:22",
-    "Issued": true
+    "Issued": false
   },
   {
     "id_Car": 2,
     "id_User": 13,
     "booking_start_date": "2024-05-29T17:45:08",
     "booking_end_date": "2024-05-31T17:45:08",
-    "Issued": true
+    "Issued": false
   },
   {
     "id_Car": 3,
@@ -53,7 +53,7 @@
     "id_User": 12,
     "booking_start_date": "2024-05-22T20:49:38.4486736+03:00",
     "booking_end_date": "2024-05-23T20:49:38",
-    "Issued": false
+    "Issued": true
   },
   {
     "id_Car": 3,

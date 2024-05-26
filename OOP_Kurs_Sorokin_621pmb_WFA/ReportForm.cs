@@ -40,5 +40,14 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             carsReportForm.FormClosed += (s, args) => this.Close();
             carsReportForm.Show();
         }
+
+        private void button_ToMain_Click(object sender, EventArgs e)
+        {
+            CarsParkForm carsParkForm = new CarsParkForm();
+            this.Hide();
+            carsParkForm.FormClosed += (s, args) => this.Close();
+            carsParkForm.Show();
+
+        }
     }
 }

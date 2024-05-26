@@ -85,5 +85,13 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
                 currentSearchIndex = -1; // Сброс индекса поиска
             }
         }
+
+        private void button_Back_Click(object sender, EventArgs e)
+        {
+            ReportForm reportForm = new ReportForm();
+            this.Hide();
+            reportForm.FormClosed += (s, args) => this.Close();
+            reportForm.Show();
+        }
     }
 }

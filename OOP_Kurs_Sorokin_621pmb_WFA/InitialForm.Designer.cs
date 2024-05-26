@@ -46,9 +46,9 @@
             // 
             // button_Authorization
             // 
-            this.button_Authorization.Location = new System.Drawing.Point(121, 85);
+            this.button_Authorization.Location = new System.Drawing.Point(105, 85);
             this.button_Authorization.Name = "button_Authorization";
-            this.button_Authorization.Size = new System.Drawing.Size(94, 23);
+            this.button_Authorization.Size = new System.Drawing.Size(103, 23);
             this.button_Authorization.TabIndex = 6;
             this.button_Authorization.Text = "Авторізація";
             this.button_Authorization.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@
             // 
             // button_Registration
             // 
-            this.button_Registration.Location = new System.Drawing.Point(341, 84);
+            this.button_Registration.Location = new System.Drawing.Point(244, 85);
             this.button_Registration.Name = "button_Registration";
-            this.button_Registration.Size = new System.Drawing.Size(97, 23);
+            this.button_Registration.Size = new System.Drawing.Size(111, 23);
             this.button_Registration.TabIndex = 7;
             this.button_Registration.Text = "Реєстрація";
             this.button_Registration.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@
             // 
             // button_Guest
             // 
-            this.button_Guest.Location = new System.Drawing.Point(479, 85);
+            this.button_Guest.Location = new System.Drawing.Point(381, 85);
             this.button_Guest.Name = "button_Guest";
-            this.button_Guest.Size = new System.Drawing.Size(115, 23);
+            this.button_Guest.Size = new System.Drawing.Size(136, 23);
             this.button_Guest.TabIndex = 8;
             this.button_Guest.Text = "Увійти як гість";
             this.button_Guest.UseVisualStyleBackColor = true;

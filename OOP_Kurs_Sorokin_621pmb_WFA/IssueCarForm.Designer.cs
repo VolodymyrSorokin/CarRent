@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView_Issue = new System.Windows.Forms.DataGridView();
-            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.button_ToMain = new System.Windows.Forms.Button();
             this.Column_id_Car = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_id_User = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_booking_start_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +36,9 @@
             this.Column_Issued = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column_Issue = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column_Return = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button_ToMain = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Issue)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,41 +53,13 @@
             this.Column_Issued,
             this.Column_Issue,
             this.Column_Return});
-            this.dataGridView_Issue.Location = new System.Drawing.Point(1, 83);
+            this.dataGridView_Issue.Location = new System.Drawing.Point(0, 83);
             this.dataGridView_Issue.Name = "dataGridView_Issue";
             this.dataGridView_Issue.RowHeadersWidth = 51;
             this.dataGridView_Issue.RowTemplate.Height = 24;
             this.dataGridView_Issue.Size = new System.Drawing.Size(808, 366);
             this.dataGridView_Issue.TabIndex = 0;
             this.dataGridView_Issue.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Issue_CellContentClick);
-            // 
-            // dataGridViewButtonColumn1
-            // 
-            this.dataGridViewButtonColumn1.HeaderText = "Видати";
-            this.dataGridViewButtonColumn1.MinimumWidth = 6;
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.Text = "Видати";
-            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
-            this.dataGridViewButtonColumn1.Width = 125;
-            // 
-            // dataGridViewButtonColumn2
-            // 
-            this.dataGridViewButtonColumn2.HeaderText = "Повернуто";
-            this.dataGridViewButtonColumn2.MinimumWidth = 6;
-            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
-            this.dataGridViewButtonColumn2.Text = "Повернуто";
-            this.dataGridViewButtonColumn2.UseColumnTextForButtonValue = true;
-            this.dataGridViewButtonColumn2.Width = 125;
-            // 
-            // button_ToMain
-            // 
-            this.button_ToMain.Location = new System.Drawing.Point(702, 24);
-            this.button_ToMain.Name = "button_ToMain";
-            this.button_ToMain.Size = new System.Drawing.Size(75, 23);
-            this.button_ToMain.TabIndex = 1;
-            this.button_ToMain.Text = "Головна";
-            this.button_ToMain.UseVisualStyleBackColor = true;
-            this.button_ToMain.Click += new System.EventHandler(this.button_ToMain_Click);
             // 
             // Column_id_Car
             // 
@@ -146,6 +118,34 @@
             this.Column_Return.Text = "Повернуто";
             this.Column_Return.UseColumnTextForButtonValue = true;
             this.Column_Return.Width = 125;
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.HeaderText = "Видати";
+            this.dataGridViewButtonColumn1.MinimumWidth = 6;
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.Text = "Видати";
+            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
+            this.dataGridViewButtonColumn1.Width = 125;
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.HeaderText = "Повернуто";
+            this.dataGridViewButtonColumn2.MinimumWidth = 6;
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.Text = "Повернуто";
+            this.dataGridViewButtonColumn2.UseColumnTextForButtonValue = true;
+            this.dataGridViewButtonColumn2.Width = 125;
+            // 
+            // button_ToMain
+            // 
+            this.button_ToMain.Location = new System.Drawing.Point(702, 24);
+            this.button_ToMain.Name = "button_ToMain";
+            this.button_ToMain.Size = new System.Drawing.Size(75, 23);
+            this.button_ToMain.TabIndex = 1;
+            this.button_ToMain.Text = "Головна";
+            this.button_ToMain.UseVisualStyleBackColor = true;
+            this.button_ToMain.Click += new System.EventHandler(this.button_ToMain_Click);
             // 
             // IssueCarForm
             // 

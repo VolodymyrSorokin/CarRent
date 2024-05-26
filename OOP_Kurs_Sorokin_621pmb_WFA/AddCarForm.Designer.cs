@@ -40,6 +40,7 @@
             this.textBox_bodyType = new System.Windows.Forms.TextBox();
             this.textBox_price = new System.Windows.Forms.TextBox();
             this.button_Add = new System.Windows.Forms.Button();
+            this.button_Report = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -141,11 +142,22 @@
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
+            // button_Report
+            // 
+            this.button_Report.Location = new System.Drawing.Point(618, 66);
+            this.button_Report.Name = "button_Report";
+            this.button_Report.Size = new System.Drawing.Size(75, 23);
+            this.button_Report.TabIndex = 12;
+            this.button_Report.Text = "Репорт";
+            this.button_Report.UseVisualStyleBackColor = true;
+            this.button_Report.Click += new System.EventHandler(this.button_Report_Click);
+            // 
             // AddCarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_Report);
             this.Controls.Add(this.button_Add);
             this.Controls.Add(this.textBox_price);
             this.Controls.Add(this.textBox_bodyType);
@@ -179,5 +191,6 @@
         private System.Windows.Forms.TextBox textBox_bodyType;
         private System.Windows.Forms.TextBox textBox_price;
         private System.Windows.Forms.Button button_Add;
+        private System.Windows.Forms.Button button_Report;
     }
 }

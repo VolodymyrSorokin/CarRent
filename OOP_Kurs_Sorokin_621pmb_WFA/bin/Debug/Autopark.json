@@ -48,5 +48,15 @@
     "Price": 650,
     "IsAvailable": true,
     "Issued": false
+  },
+  {
+    "BodyType": "Хэтчбэк",
+    "id_Car": 6,
+    "Manufacturer": "Ford",
+    "Model": "Taurus",
+    "Year": 2020,
+    "Price": 1000,
+    "IsAvailable": true,
+    "Issued": false
   }
 ]

@@ -32,7 +32,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             DateTime startDate = dateTimePicker_BookingStartDate.Value;
             DateTime endDate = dateTimePicker_BookingEndDate.Value;
 
-            string message = $"startDate: {startDate}, endDate: {endDate}\n\n";
+/*            string message = $"startDate: {startDate}, endDate: {endDate}\n\n";
             foreach (var booking in bookings)
             {
                 message += $"Booking for car {booking.id_Car}: start date - {booking.booking_start_date}, end date - {booking.booking_end_date}\n";
@@ -51,7 +51,7 @@ namespace OOP_Kurs_Sorokin_621pmb_WFA
             string overlapMessage = datesOverlap ? "Обрані дати перетинаються з існуючими бронюваннями." : "Обрані дати не перетинаються з жодними бронюваннями.";
 
             MessageBox.Show(message + "\n" + overlapMessage, "Дані про бронювання та дати", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+*/
             // Фільтрація списку автомобілів, щоб відобразити лише доступні (не заброньовані)
             List<Car> availableCars = cars.Where(car => car.IsAvailable).ToList();
 
